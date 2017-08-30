@@ -2,9 +2,10 @@
 	<div class="row">
 		<div class="col-xs-12 text-center" id="top-bar">
 			<img src="/assets/images/burger.png" alt="burger" />
-			<h1> Eat-Da-Burger! </h1>
+			<h1>Burgers!</h1>
 		</div>
 		<div class="col-xs-6 text-center" class="task">
+			<h2>ToEat List</h2>
 			<div class="row">
 			  {{#each burgers}}
 			  	{{#unless this.devoured}}
@@ -24,6 +25,7 @@
 			</div>
 		</div>
 		<div class="col-xs-6 text-center" class="task">
+			<h2>Eaten List</h2>
 			  {{#each burgers}}
 			  	{{#if this.devoured}}
 			  		<input class="form-control" type="text" placeholder="{{this.id}} . {{this.burger_name}}" readonly>
